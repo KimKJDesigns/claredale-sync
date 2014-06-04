@@ -4,7 +4,7 @@ README
 About Us
 --------
 
-http://jaydean.net
+https://jaydean.net
 
 Requirements
 ------------
@@ -13,7 +13,7 @@ Requirements
 * Guzzle ~4.0
 
 Installing via Composer
-------------
+-----------------------
 
 The recommended way to install is through
 [Composer](http://getcomposer.org).
