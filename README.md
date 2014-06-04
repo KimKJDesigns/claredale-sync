@@ -9,8 +9,8 @@ http://jaydean.net
 Requirements
 ------------
 
-PHP >=5.4.0
-guzzle ~4.0
+* PHP >=5.4.0
+* Guzzle ~4.0
 
 Installing via Composer
 ------------
