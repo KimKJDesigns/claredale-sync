@@ -12,6 +12,7 @@ class Product
     protected $brand;
     protected $manufacturer;
     protected $price;
+    protected $wholesalePrice;
     protected $gst;
     protected $show;
     protected $image;
@@ -154,6 +155,22 @@ class Product
     public function setPrice($price)
     {
         $this->price = $price;
+    }
+
+    /**
+     * @return float
+     */
+    public function getWholesalePrice()
+    {
+        return $this->wholesalePrice;
+    }
+
+    /**
+     * @param float $price
+     */
+    public function setWholesalePrice($price)
+    {
+        $this->wholesalePrice = $wholesalePrice;
     }
 
     /**
