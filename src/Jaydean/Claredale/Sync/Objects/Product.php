@@ -13,6 +13,7 @@ class Product
     protected $manufacturer;
     protected $price;
     protected $wholesalePrice;
+    protected $specialPrice;
     protected $gst;
     protected $show;
     protected $image;
@@ -168,9 +169,25 @@ class Product
     /**
      * @param float $price
      */
-    public function setWholesalePrice($price)
+    public function setWholesalePrice($wholesalePrice)
     {
         $this->wholesalePrice = $wholesalePrice;
+    }
+
+    /**
+     * @return float
+     */
+    public function getSpecialPrice()
+    {
+        return $this->specialPrice;
+    }
+
+    /**
+     * @param float $price
+     */
+    public function setSpecialPrice($specialPrice)
+    {
+        $this->specialPrice = $specialPrice;
     }
 
     /**
