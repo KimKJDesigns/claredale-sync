@@ -168,7 +168,7 @@ class Product
     /**
      * @param float $price
      */
-    public function setWholesalePrice($price)
+    public function setWholesalePrice($wholesalePrice)
     {
         $this->wholesalePrice = $wholesalePrice;
     }
