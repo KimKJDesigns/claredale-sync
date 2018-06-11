@@ -86,7 +86,7 @@ class Sync
             }
 
             if (!isset($brandCache[$product['brandId']])) {
-                $brandCache[$product['brandId']] = new Brand($product['brandId'], $product['brandName']);
+                $brandCache[$product['brandId']] = new Brand($product['brandId'], $product['brandName'], $product['manufacturerId']);
                 $this->eventManager->dispatchEvent('getBrand', [$brandCache[$product['brandId']]]);
             }
 
