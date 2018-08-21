@@ -49,8 +49,8 @@ class Sync
         $response = $client->get($this->endpoint, ['query' => ['token' => $this->token]]);
 
         if ($response->getStatusCode() == 200) {
-            $data = $response->json();
-            return $this->parseData($data);
+            // $data = $response->json();
+            return $this->parseData($response->data);
         } else {
             throw new \Exception('Invalid status code given', 404);
         }
