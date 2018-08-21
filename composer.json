@@ -3,7 +3,7 @@
     "description": "Enables an easy event based system to interact with Claredale data feed",
     "require": {
         "php": ">=5.4.0",
-        "guzzlehttp/guzzle": "~4.0"
+        "guzzlehttp/guzzle": "dev-master"
     },
     "autoload": {
         "psr-0": {"Jaydean\\": "src/"}
