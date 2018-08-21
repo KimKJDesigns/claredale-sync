@@ -46,11 +46,14 @@ class Sync
         /**
          * @var \GuzzleHttp\Message\Response $response
          */
-        $response = $client->get($this->endpoint, ['query' => ['token' => $this->token]]);
+        $response = $client->request('GET', $this->endpoint, [
+            'query' => ['token' => $this->token]
+        ]);
 
         if ($response->getStatusCode() == 200) {
-            // $data = $response->json();
-            return $this->parseData($response['data']);
+            $content = $response->getBody()->getContents();
+            $data = json_decode($content, true);
+            return $this->parseData($data);
         } else {
             throw new \Exception('Invalid status code given', 404);
         }
