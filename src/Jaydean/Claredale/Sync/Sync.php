@@ -50,7 +50,7 @@ class Sync
 
         if ($response->getStatusCode() == 200) {
             // $data = $response->json();
-            return $this->parseData($response->data);
+            return $this->parseData($response['data']);
         } else {
             throw new \Exception('Invalid status code given', 404);
         }
